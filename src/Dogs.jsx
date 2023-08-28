@@ -38,7 +38,7 @@ class Dogs extends React.Component {
         <ListGroup>
           { this.props.dogs.length > 0 && dogsComponents }
         </ListGroup>
-        {/* TODO: Create Form here... */}
+        {/* Create Form here... */}
         <Form onSubmit={this.handleSubmit} style={{padding: "20%"}}>
           <h2>Create Dog</h2>
           <Form.Control type="text" name="name" placeholder="Name"/>
@@ -50,5 +50,15 @@ class Dogs extends React.Component {
     );
   }
 }
+
+// Review:
+// 1. What Props do we need to pass to Dogs to get Create and Delete to work?
+// 2. What info does the Delete function need?
+// 3. What info does the Update function need?
+
+// TODO: UpdateDogForm Goes here
+// 1. What are the props we should pass to Update?
+// 2. What info about a dog do we need to Update it?
+// 3. Where does that info come from?
 
 export default Dogs;
